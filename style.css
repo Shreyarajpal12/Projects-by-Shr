@@ -557,7 +557,7 @@
     }
   
     to {
-      --num: 10000;
+      --num: 1000;
     }
   }
   
@@ -567,7 +567,7 @@
     }
   
     to {
-      --num: 10000;
+      --num: 1000;
     }
   }
   
@@ -577,7 +577,7 @@
     }
   
     to {
-      --num: 256;
+      --num: 12;
     }
   }
   
@@ -587,7 +587,7 @@
     }
   
     to {
-      --num: 256;
+      --num: 12;
     }
   }
   
@@ -597,7 +597,7 @@
     }
   
     to {
-      --num: 52;
+      --num: 8;
     }
   }
   
@@ -607,7 +607,7 @@
     }
   
     to {
-      --num: 52;
+      --num: 8;
     }
   }
   
@@ -617,7 +617,7 @@
     }
   
     to {
-      --num: 1256;
+      --num: 50;
     }
   }
   
@@ -627,7 +627,7 @@
     }
   
     to {
-      --num: 1256;
+      --num: 50;
     }
   }
   
@@ -863,13 +863,13 @@
   
   @-webkit-keyframes python {
     100% {
-      width: 75%;
+      width: 85%;
     }
   }
   
   @keyframes python {
     100% {
-      width: 75%;
+      width: 85%;
     }
   }
   
@@ -899,11 +899,28 @@
   
   @-webkit-keyframes java {
     100% {
-      width: 65%;
+      width: 55%;
     }
   }
   
   @keyframes java {
+    100% {
+      width: 55%;
+    }
+  }
+  .about-stats .progress-bars .progress-bar .progress-con .progress .sql {
+    width: 0;
+    -webkit-animation: sql 2s 2s ease-in-out forwards;
+    animation: sql 2s 2s ease-in-out forwards;
+  }
+  
+  @-webkit-keyframes sql {
+    100% {
+      width: 65%;
+    }
+  }
+  
+  @keyframes sql {
     100% {
       width: 65%;
     }
