@@ -84,7 +84,7 @@ PageTransitions()
 
 //=======SET H-REFs FOR ANCHOR TAGS ========
 
-$('.yt').prop('href', 'https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ')
+$('.yt').prop('href', 'https://youtu.be/t9U41aYma5s')
 $('.codepen').prop('href', 'https://www.codepen.io/skyegideon')
 $('.git').prop('href', 'https://www.github.com')
 $('.blog-a').prop('href', 'https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ')
