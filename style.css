@@ -532,13 +532,13 @@
   }
   
   #project {
-    -webkit-animation: project 7s .5s ease-in-out forwards;
-    animation: project 7s .5s ease-in-out forwards;
+    -webkit-animation: project 5s .5s ease-in-out forwards;
+    animation: project 5s .5s ease-in-out forwards;
   }
   
   #code {
-    -webkit-animation: code 15s 1s ease-in-out forwards;
-    animation: code 15s 1s ease-in-out forwards;
+    -webkit-animation: code 5s 1s ease-in-out forwards;
+    animation: code 5s 1s ease-in-out forwards;
   }
   
   #clients {
@@ -547,8 +547,8 @@
   }
   
   #codepen {
-    -webkit-animation: codepen 10s 3s ease-in-out forwards;
-    animation: codepen 10s 3s ease-in-out forwards;
+    -webkit-animation: codepen 6s 3s ease-in-out forwards;
+    animation: codepen 6s 3s ease-in-out forwards;
   }
   
   @-webkit-keyframes code {
@@ -557,7 +557,7 @@
     }
   
     to {
-      --num: 1000;
+      --num: 10;
     }
   }
   
@@ -567,7 +567,7 @@
     }
   
     to {
-      --num: 1000;
+      --num: 10;
     }
   }
   
@@ -701,7 +701,8 @@
     position: relative;
     text-transform: uppercase;
     font-size: 1.2rem;
-    letter-spacing: 2px;
+    font-weight: 500;
+    letter-spacing: 3px;
     color: var(--grey-1);
   }
   
@@ -726,9 +727,11 @@
   }
   
   .about-container .left-about h4 {
-    font-size: 1.6rem;
-    letter-spacing: 1.2px;
-    font-family: cinzel decorative, serif;
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    padding: 1rem;
+    font-family: teko, sans-serif;
+    font-weight: 450;
   }
   
   .about-stats {
@@ -863,13 +866,13 @@
   
   @-webkit-keyframes python {
     100% {
-      width: 85%;
+      width: 90%;
     }
   }
   
   @keyframes python {
     100% {
-      width: 85%;
+      width: 90%;
     }
   }
   
@@ -923,6 +926,40 @@
   @keyframes sql {
     100% {
       width: 65%;
+    }
+  }
+  .about-stats .progress-bars .progress-bar .progress-con .progress .sparql {
+    width: 0;
+    -webkit-animation: sql 2s 2s ease-in-out forwards;
+    animation: sql 2s 2s ease-in-out forwards;
+  }
+  
+  @-webkit-keyframes sparql {
+    100% {
+      width: 80%;
+    }
+  }
+  
+  @keyframes sparql {
+    100% {
+      width: 80%;
+    }
+  }
+  .about-stats .progress-bars .progress-bar .progress-con .progress .c {
+    width: 0;
+    -webkit-animation: sql 2s 2s ease-in-out forwards;
+    animation: sql 2s 2s ease-in-out forwards;
+  }
+  
+  @-webkit-keyframes c {
+    100% {
+      width: 60%;
+    }
+  }
+  
+  @keyframes c {
+    100% {
+      width: 60%;
     }
   }
   
@@ -1461,8 +1498,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 1rem;
+
     -ms-flex-item-align: start;
-    align-self: flex-start;
+    /* align-self: flex-start; */
   }
   
   .main-btn {
@@ -1698,7 +1737,13 @@
       font-size: 2.5rem;
     }
   }
-  
+  @media (max-width: 450px) {
+    .header-content .right-header .name .span {
+      font-size: 1.5rem !important;
+      -webkit-transition: var(--transition);
+      transition: var(--transition);
+    }
+  }
   @media (max-width: 750px) {
     .section {
       padding: 2rem 3rem !important;
@@ -1819,7 +1864,7 @@
     }
   
     header .right-header .name span {
-      font-size: 3rem !important;
+      font-size: 3rem ;
       -webkit-transition: var(--transition);
       transition: var(--transition);
     }
@@ -1852,7 +1897,7 @@
   
   @media (max-width: 1070px) {
     .header-content .right-header .name .span {
-      font-size: 1.7rem !important;
+      font-size: 1.7rem ;
       -webkit-transition: var(--transition);
       transition: var(--transition);
     }
@@ -1898,7 +1943,7 @@
   
   @media (max-width: 1187px) {
     .header-content .right-header .name span {
-      font-size: 2rem !important;
+      font-size: 2rem ;
       -webkit-transition: var(--transition);
       transition: var(--transition);
     }
@@ -1934,16 +1979,11 @@
   
   @media (max-width: 1432px) {
     .header-content .right-header .name span {
-      font-size: 2rem !important;
+      font-size: 2rem ;
       -webkit-transition: var(--transition);
       transition: var(--transition);
     }
   
-    .header-content .right-header .name .span {
-      font-size: 2rem !important;
-      -webkit-transition: var(--transition);
-      transition: var(--transition);
-    }
   
     .controls {
       right: 1.2%;
